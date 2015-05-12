@@ -8,15 +8,19 @@ class CreateTables < ActiveRecord::Migration
       t.timestamps
     end
 
-    create_table :photos do |t|
+    create_table :pins do |t|
       # Your code goes here
-      t.string :posting
-      t.string :image
-      t.string :pins
-      t.string :comments
+      t.string :photos
+      t.string :title
       t.timestamps
     end
 
+
+    create_table :comments do |t|
+      # Your code goes here
+      t.string :text
+      t.timestamps
+    end
   end
 
   
